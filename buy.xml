@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>   
+<bitfinex>   
+  <market name="BCHUSD">   
+    <encrypt>cycloid</encrypt>
+    <accessId>xxxxxxxxxx</accessId>
+    <accessKey>xxxxxxxxx</accessKey>
+    <model>fixed_amount</model> <!--定投模式 1- fixed_amount(定投金额)  2- fixed_num(定投数量)  -->
+    <amount>75</amount> <!--定投金额时，请设置金额，定投数量模式时， 金额可以设置0  -->
+    <num>0</num>   <!--定投金额模式时， 数量可以设置0，定投数量模式时，请设置数量  -->
+    <type>exchange limit</type> <!-- 交易类型 1- exchange limit 2- exchange market  -->
+    <price>mid</price>   <!--当交易类型是exchange limit，bid 按买一价挂单，ask,按卖一价挂单，mid按中间价挂单，last按最后成交价挂单；当交易类型是exchange market，则会忽略price设置，按市价购买  -->
+    <time>05:03</time> <!-- 每天执行时间 -->    
+  </market>
+  <market name="EOSUSD">   
+    <encrypt>cycloid</encrypt>
+    <accessId>xxxxxxxxxx</accessId>
+    <accessKey>xxxxxxxxx</accessKey>
+    <model>fixed_amount</model> <!--定投模式 1- fixed_amount(定投金额)  2- fixed_num(定投数量)  -->
+    <amount>75</amount> <!--定投金额时，请设置金额，定投数量模式时， 金额可以设置0  -->
+    <num>0</num>   <!--定投金额模式时， 数量可以设置0，定投数量模式时，请设置数量  -->
+    <type>exchange limit</type> <!-- 交易类型 1- exchange limit 2- exchange market  -->
+    <price>mid</price>   <!--当交易类型是exchange limit，且price设置为0，则自动按买一价挂单，如果price设置大于0，则按price价格挂单；当交易类型是exchange market，则会忽略price设置，按市价购买  -->
+    <time>05:06</time> <!-- 每天执行时间 -->    
+  </market>
+</bitfinex> 
